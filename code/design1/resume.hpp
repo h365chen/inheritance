@@ -4,7 +4,7 @@
 #include <string>
 
 class Resume {
-public:
+private:
     std::string name, contact; 
     int category;
     std::string school = "University of Toronto Scarborough";
@@ -13,7 +13,7 @@ public:
     int nwe = 0;
     std::string paperRecords[50];
     std::string workExperiences[50];
-
+public:
     // category: 1 - ResearchResume, 2 - IndustryResume
     Resume(std::string name, std::string contact, int category);
     void addEntry(std::string entry);
